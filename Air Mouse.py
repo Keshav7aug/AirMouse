@@ -48,7 +48,7 @@ while True:
         if dist<=40:
             leftClick()
             clicked=True
-    if fingers[1]==1 and fingers[4]==1 and sum(fingers)==2:
+    if fingers[1]==1 and fingers[4]==1 and sum(fingers)==2 and not clicked:
         rightClick()
         clicked=True
     cTime = time.time()
