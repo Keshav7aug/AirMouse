@@ -1,6 +1,9 @@
 # AirMouse
 <h1> This can be used as a Air Mouse </h1>
-
+<h2>Installations</h2>
+<ul>
+  <li>pip install -r requirements.txt</li>
+</ul>
 <h2> Currently Supported Functionality </h2>
 <ul>
 <li>Move Pointer</li>
