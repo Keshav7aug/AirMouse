@@ -42,12 +42,15 @@ while True:
         pLocX, pLocY = cLocX, cLocY
         cv2.circle(img, (x1, y1), 15, (255, 0, 255), cv2.FILLED)
         clicked=False
-    if fingers[1]==1 and fingers[2]==1 and sum(fingers)==2 and not clicked:
+    if fingers[1]==1 and fingers[2]==1 and sum(fingers)==2:
         dist = detector.findDistance(8,12)
         clicked = False
         if dist<=40:
             leftClick()
             clicked=True
+    if fingers[1]==1 and fingers[4]==1 and sum(fingers)==2:
+        rightClick()
+        clicked=True
     cTime = time.time()
     fps = 1/(cTime - pTime)
     pTime = cTime
